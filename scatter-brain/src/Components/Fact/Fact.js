@@ -1,8 +1,9 @@
 import React from 'react';
+import './Fact.css'
 
 const Fact = (props) => {
   return (
-    <div>{props.fact}</div>
+    <p className="fact">{props.fact}</p>
   )
 }
 
