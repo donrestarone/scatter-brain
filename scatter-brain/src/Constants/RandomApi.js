@@ -1,0 +1,1 @@
+export const randomApiRoot = 'https://uselessfacts.jsph.pl/random.json'
