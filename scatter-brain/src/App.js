@@ -48,13 +48,26 @@ class App extends Component {
     this.props.initializeTimer(timer)
   }
 
+  getWindowDimensions = () => {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+
 
 
   render() {
+    let backgroundStyle = {
+      backgroundImage: `url('https://picsum.photos/${this.getWindowDimensions().width}/${this.getWindowDimensions().height}')`,
+    }
     return (
       <>
-        <Slider></Slider>
+      <div style={backgroundStyle} className="app-container animated slideInUp">
         <FactHOC></FactHOC>
+        <Slider></Slider>
+      </div>
       </>
     );
   }
