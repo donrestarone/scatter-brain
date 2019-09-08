@@ -1,6 +1,8 @@
 import React from 'react';
 import Fact from '../../Fact/Fact'
 import { connect } from 'react-redux'
+import './FactHOC.css'
+
 const FactHOC = (props) => {
   const latestFact = () => {
     let index = props.facts.length > 0 ? props.facts.length -1 : false
@@ -9,7 +11,7 @@ const FactHOC = (props) => {
     }
   }
   return (
-    <div>
+    <div className="fact-container">
       <Fact fact={latestFact()}></Fact>
     </div>
   )
