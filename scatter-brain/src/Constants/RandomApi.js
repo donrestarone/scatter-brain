@@ -1,1 +1,1 @@
-export const randomApiRoot = 'https://uselessfacts.jsph.pl/random.json'
+export const randomApiRoot = 'https://uselessfacts.jsph.pl/random.json?language=en'
