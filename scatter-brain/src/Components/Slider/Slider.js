@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-
+import './Slider.css'
 const Slider = (props) => {
   return (
   <div class="slidecontainer">
